@@ -54,6 +54,42 @@
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
         app.initialize();
+ function onDeviceReady(){
+            
+      const push = PushNotification.init({
+	android: {
+	},
+    browser: {
+        pushServiceURL: 'http://push.api.phonegap.com/v1/push'
+    },
+	ios: {
+		alert: "true",
+		badge: "true",
+		sound: "true"
+	},
+	windows: {}
+});
+
+push.on('registration', (data) => {
+	// data.registrationId
+});
+
+push.on('notification', (data) => {
+	// data.message,
+	// data.title,
+	// data.count,
+	// data.sound,
+	// data.image,
+	// data.additionalData
+});
+
+push.on('error', (e) => {
+	// e.message
+});
+        
+        
+}    
+ document.addEventListener("deviceready", onDeviceReady, false);
     </script>
 </body>
 
