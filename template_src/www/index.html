@@ -53,7 +53,7 @@
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
-        app.initialize();
+        document.addEventListener("deviceready", onDeviceReady, false);
  function onDeviceReady(){
             
        const push = PushNotification.init({
@@ -86,16 +86,15 @@ push.on('error', (e) => {
 push.subscribe(
   'exemplo2',
   () => {
-    alert('success');
+    //alert('success');
   },
   e => {
-    alert('error:', e);
+    //alert('error:', e);
   }
 );
         
         
 }    
- document.addEventListener("deviceready", onDeviceReady, false);
     </script>
 </body>
 
