@@ -33,7 +33,7 @@
 
     <!-- Plugins -->
     <plugin name="phonegap-plugin-push"         source="npm" spec="~1.8.0" >
-        <variable name="SENDER_ID" value="XXXXXXX" />
+        <variable name="SENDER_ID" value="379505993205" />
     </plugin>
 
     <!-- Define app icon and splashscreen for each platform. -->
