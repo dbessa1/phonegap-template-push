@@ -31,7 +31,7 @@
     <preference name="StatusBarStyle"             value="blacktranslucent" />
 <preference name="android-build-tool" value="gradle" />
     <!-- Define a specific version of PhoneGap to build into your app. -->
-     <preference name="phonegap-version"       value="cli-6.3.0" />
+     <preference name="phonegap-version"       value="cli-8.0.0" />
     <!-- Plugins -->
         <plugin spec="https://github.com/dbessa1/PERSONALIZADOS_cordova-plugin-firebase_escoltaja.git" source="git" />
         <!--
