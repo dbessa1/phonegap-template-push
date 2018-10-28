@@ -32,7 +32,7 @@
     <!-- <preference name="phonegap-version"       value="cli-6.0.0" /> -->
 
     <!-- Plugins -->
-    <plugin name="phonegap-plugin-push"         source="npm" spec="~1.8.0" >
+    <plugin name="phonegap-plugin-push"         source="npm" >
         <variable name="SENDER_ID" value="379505993205" />
     </plugin>
 
