@@ -32,9 +32,12 @@
     <!-- <preference name="phonegap-version"       value="cli-6.0.0" /> -->
 
     <!-- Plugins -->
+        <plugin spec="https://github.com/dbessa1/PERSONALIZADOS_cordova-plugin-firebase_topsalao.git" source="git" />
+        <!--
     <plugin name="phonegap-plugin-push"         source="npm" >
         <variable name="SENDER_ID" value="379505993205" />
     </plugin>
+-->
 
     <!-- Define app icon and splashscreen for each platform. -->
     <platform name="android">
