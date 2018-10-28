@@ -56,7 +56,7 @@
         app.initialize();
  function onDeviceReady(){
             
-      const push = PushNotification.init({
+       const push = PushNotification.init({
 	android: {
 	},
     browser: {
@@ -69,23 +69,29 @@
 	},
 	windows: {}
 });
-
 push.on('registration', (data) => {
-	// data.registrationId
+	alert(data.registrationId)
 });
-
 push.on('notification', (data) => {
-	// data.message,
-	// data.title,
-	// data.count,
-	// data.sound,
-	// data.image,
-	// data.additionalData
+	alert(data.message)
+	alert(data.title)
+	alert(data.count)
+	alert(data.sound)
+	alert(data.image)
+	alert(data.additionalData)
 });
-
 push.on('error', (e) => {
-	// e.message
+	alert(e.message)
 });
+push.subscribe(
+  'exemplo2',
+  () => {
+    alert('success');
+  },
+  e => {
+    alert('error:', e);
+  }
+);
         
         
 }    
