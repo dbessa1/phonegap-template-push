@@ -56,43 +56,7 @@
         document.addEventListener("deviceready", onDeviceReady, false);
 
            function onDeviceReady(){ 
-       const push = PushNotification.init({
-	android: {
-		senderID: "379505993205"
-	},
-    browser: {
-        pushServiceURL: 'http://push.api.phonegap.com/v1/push'
-    },
-	ios: {
-		alert: "true",
-		badge: "true",
-		sound: "true"
-	},
-	windows: {}
-});
-push.on('registration', (data) => {
-	alert(data.registrationId)
-});
-push.on('notification', (data) => {
-	alert(data.message)
-	//alert(data.title)
-	//alert(data.count)
-	//alert(data.sound)
-	//alert(data.image)
-	//alert(data.additionalData)
-});
-push.on('error', (e) => {
-	alert(e.message)
-});
-push.subscribe(
-  'exemplo2',
-  () => {
-    alert('success');
-  },
-  e => {
-    alert('error:', e);
-  }
-);
+
         
 	   }
 
