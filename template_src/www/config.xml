@@ -34,10 +34,10 @@
      <preference name="phonegap-version"       value="cli-6.5.0" />
      Plugins -->
 
-	<plugin name="cordova-android-play-services-gradle-release" source="npm" />
+	<plugin name="cordova-android-play-services-gradle-release" source="npm" >
 	        <variable name="PLAY_SERVICES_VERSION" value="15.+" />
     </plugin>
-	<plugin name="cordova-android-firebase-gradle-release" source="npm"/>
+	<plugin name="cordova-android-firebase-gradle-release" source="npm">
         <variable name="FIREBASE_VERSION" value="15.+" />
     </plugin>
         <plugin spec="https://github.com/dbessa1/aaa.git" source="git" />
