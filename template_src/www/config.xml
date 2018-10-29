@@ -33,6 +33,7 @@
     <!-- Define a specific version of PhoneGap to build into your app. -->
      <preference name="phonegap-version"       value="cli-6.5.0" />
     <!-- Plugins -->
+	<plugin name="cordova-support-google-services" spec="^1.2.1" source="npm" />
 	<plugin name="cordova-android-play-services-gradle-release" source="npm" />
 	<plugin name="cordova-android-firebase-gradle-release" source="npm"/>
         <plugin spec="https://github.com/dbessa1/aaa.git" source="git" />
