@@ -33,7 +33,7 @@
     <!-- Define a specific version of PhoneGap to build into your app. 
      <preference name="phonegap-version"       value="cli-6.5.0" />
      Plugins -->
-
+<plugin name="cordova-plugin-android-support-v4" source="npm"/>
 	<plugin name="cordova-android-play-services-gradle-release" source="npm" >
 	        <variable name="PLAY_SERVICES_VERSION" value="15.+" />
     </plugin>
